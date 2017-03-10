@@ -1,0 +1,86 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:576px) {
+    #nav {
+        margin: auto;
+    }
+}
+
+#navitems {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:300;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    background-color: transparent;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+#page1{
+  height: 100%;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url("../imgs/bg1.jpg");
+  background-attachment: fixed;
+
+}
+@media (max-width: 575px){
+    #page1{
+        background-attachment: scroll;
+    }
+}
+#main-title h1{
+  font-size: 4rem;
+}
+#main-title{
+  border-color: black;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:300;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  -webkit-animation: fadein 4s;
+     -moz-animation: fadein 4s ;
+      -ms-animation: fadein 4s ;
+       -o-animation: fadein 4s ;
+          animation: fadein 4s ;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.navbar-brand {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: .12rem;
+    margin-left: 1rem;
+}
+
+.navbar-offset {
+    margin-top: -5rem;
+    padding-top: 5rem;
+}
