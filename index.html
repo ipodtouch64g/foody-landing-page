@@ -5,30 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>
-        window.sr = ScrollReveal({ reset: true });
 
-        // Add class to <html> if ScrollReveal is supported
-        // Note: this method is deprecated, and only works in version 3
-
-        document.documentElement.classList.add('sr');
-    </script>
-    <style>
-        /* Ensure elements load hidden before ScrollReveal runs */
-
-        .sr #main-title {
-            visibility: hidden;
-        }
-
-        .sr #whytext {
-            visibility: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/onepage-scroll.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
     <!-- <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script> -->
     <title>FOODY | Your choice for food </title>
@@ -37,7 +20,7 @@
 
 
 <body data-spy="scroll" data-target="#nav">
-    <nav class="navbar fixed-top navbar-toggleable navbar-light" style="background-color:rgba(0, 0, 0, 0.3)">
+    <nav class="navbar fixed-bottom navbar-toggleable navbar-light" style="background-color:rgba(0, 0, 0, 0.3)">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,10 +36,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#benefits" style="color:white">benefits</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#page5" style="color:white">NICE ONE!</a>
+                </li>
             </ul>
         </div>
     </nav>
-
 
 
     <div class="container-fluid" id="page1">
@@ -64,7 +49,7 @@
             <div>
 
             </div>
-            <div id="main-title" class="mx-auto">
+            <div id="main-title" class="mx-auto wow fadeInDown">
                 <div>
                     <h1>FOODY |</h1>
                 </div>
@@ -79,7 +64,7 @@
 
     </div>
     <div class="container-fluid vertical-center" id="why">
-        <div class="container" id="whytext">
+        <div class="container wow slideInLeft" data-wow-offset="10" id="why_text_title">
             <h1>WHY |</h1>
             <h3>what is this about ?</h3>
         </div>
@@ -88,25 +73,93 @@
 
 
     <div class="container-fluid" id="page2">
+        <div class="container-fluid row" id="why_text">
+            <div class="col-6" style="text-align:center">
 
-        <p>如算小第老氣起不影器有常小世質地調軍，我今民喜題區往回北看人不陸制動在準光；理子叫復空所；可時母眼手已康家你以訴出有特成學消。態的共日德：而於地能步雜一。成遊對衣是，對個到如車成命終係發們樓終命夠增多的時會大有思行兩法經血現度特勢，清紀傷關是了包感候物良後大變中就香課師過上初出快雙業紀做地爸德的般系如曾是的重層能過般港過路古八了？前開引上些望他定，想他意球市於許我改了本；起著治以園。里入法上如些車、大如兩阿是。溫一同、中城才子心友輕，已只下越：影德夫合自個：功是現父全熱著向的東施知育低式用，的女受；立李聽了；命層班才公高我品的目願醫笑連？態每票她可統多世象事統，天職種主才行之兒燈在校民了天做友。思的子可能灣統著變看算外於。陽成長；子王家機醫稱第……法同古教起不備明國當職。爭下何服眾樹近道似在，雖灣裝的維，提壓克基灣該處們上情何出時：國了量持市的形，是車布相可已我區立視吸況高何去該有上力王己車。</p>
+            </div>
+            <div class="col-6" style="text-align:center">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid vertical-center" id="features">
+        <div class="container wow slideInRight" id="features_text_title">
+            <h1>FEATURES |</h1>
+            <h3>what can this do ?</h3>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="page3">
+        <div class="container-fluid row" id="features_text1">
+            <div class="col-6" style="text-align:center">
+
+            </div>
+            <div class="col-6" style="text-align:center">
+
+            </div>
+        </div>
+        <div class="container-fluid row" id="features_text2">
+            <div class="col-6" style="text-align:center">
+
+            </div>
+            <div class="col-6" style="text-align:center">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid vertical-center" id="benefits">
+        <div class="container wow slideInLeft" id="benefits_text_title">
+            <h1>BENEFITS |</h1>
+            <h3>how do this help ?</h3>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="page4">
+        <div class="container-fluid row" id="benefits_text1">
+            <div class="col-6" style="text-align:center">
+
+            </div>
+            <div class="col-6" style="text-align:center">
+
+            </div>
+        </div>
+        <div class="container-fluid row" id="benefits_text2">
+            <div class="col-6" style="text-align:center">
+
+            </div>
+            <div class="col-6" style="text-align:center">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid vertical-center" id="page5">
+
+        <div class="wow zoomIn" id="try_circle">
+            <a href="這邊填表單網址">我有興趣！！</a>
+        </div>
+
+
     </div>
 
 
 
+
+
+
+
+
+    <!-- animation -->
+
+
+    <script src="scripts/wow.min.js"></script>
     <script>
-        sr.reveal('#main-title', {
-            duration: 500
-        });
-        sr.reveal('#whytext', {
-
-            duration: 500,
-
-        });
+        new WOW().init();
     </script>
-
-
-
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>

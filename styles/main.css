@@ -2,13 +2,16 @@ html, body {
     width: 100%;
     height: 100%;
 }
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
 
-  display: flex;
-  align-items: center;
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
 }
+
 @media (min-width:576px) {
     #nav {
         margin: auto;
@@ -87,6 +90,116 @@ html, body {
     }
 }
 
+#page3 {
+    height: 100%;
+    background-size: cover;
+    -o-background-size: cover;
+    background: #c2e59c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (max-width: 575px) {
+    #page3 {
+        background-attachment: scroll;
+    }
+}
+
+#features {
+    min-height: 5rem;
+    height: 20%;
+    background: #c2e59c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+}
+
+#features h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
+    /*text-shadow: 0.3px 0.3px 0.3px black;*/
+    /*font-size: 1.2rem;*/
+}
+
+#features h3 {
+    display: inline-flex;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
+    /*text-shadow: 0.3px 0.3px 0.3px black;*/
+    /*font-size: 1.2rem;*/
+}
+
+#benefits {
+    min-height: 5rem;
+    height: 20%;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url("../imgs/bg3.jpg");
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#benefits h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
+    /*text-shadow: 0.3px 0.3px 0.3px black;*/
+    /*font-size: 1.2rem;*/
+}
+
+#benefits h3 {
+    display: inline-flex;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
+    /*text-shadow: 0.3px 0.3px 0.3px black;*/
+    /*font-size: 1.2rem;*/
+}
+
+#page4 {
+    height: 100%;
+    background-size: cover;
+    -o-background-size: cover;
+    background: #ffd89b;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffd89b, #19547b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (max-width: 575px) {
+    #page4 {
+        background-attachment: scroll;
+    }
+}
+
+#page5 {
+    height: 100%;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url("../imgs/bg4.jpg");
+    background-attachment: fixed;
+}
+
+@media (max-width: 575px) {
+    #page5 {
+        background-attachment: scroll;
+    }
+}
+
 #main-title h1 {
     font-size: 4rem;
 }
@@ -108,6 +221,27 @@ html, body {
     letter-spacing: .1rem;
 }
 
+#try_circle {
+    margin: 0 auto;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 50px;
+    color: #fff;
+    line-height: 30rem;
+    text-align: center;
+    background-color: transparent;
+}
+#try_circle a{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: .12rem;
+  margin-left: 1rem;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
 
 .navbar-brand {
     font-family: 'Open Sans Condensed', sans-serif;
