@@ -11,90 +11,98 @@ html, body {
 
 #navitems {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight:300;
+    font-weight: 300;
     font-size: 1.2rem;
     letter-spacing: .1rem;
     background-color: transparent;
 }
+
 .navbar-light .navbar-toggler {
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
 }
-#page1{
-  height: 100%;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url("../imgs/bg1.jpg");
-  background-attachment: fixed;
 
+#page1 {
+    height: 100%;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url("../imgs/bg1.jpg");
+    background-attachment: fixed;
 }
-@media (max-width: 575px){
-    #page1{
+
+@media (max-width: 575px) {
+    #page1 {
         background-attachment: scroll;
     }
 }
 
-#page2{
-  height: 100%;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url("../imgs/bg2.jpg");
-  background-attachment: fixed;
-
+#why {
+    min-height: 5rem;
+    height: 20%;
+    background: #c2e59c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
 }
-@media (max-width: 575px){
-    #page2{
+
+#why h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
+    /*text-shadow: 0.3px 0.3px 0.3px black;*/
+    /*font-size: 1.2rem;*/
+}
+
+#why h3 {
+    display: inline-flex;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
+    /*text-shadow: 0.3px 0.3px 0.3px black;*/
+    /*font-size: 1.2rem;*/
+}
+
+#page2 {
+    height: 100%;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url("../imgs/bg2.jpg");
+    background-attachment: fixed;
+}
+
+@media (max-width: 575px) {
+    #page2 {
         background-attachment: scroll;
     }
 }
-#main-title h1{
-  font-size: 4rem;
-}
-#main-title h3{
-  padding-left: 1rem ;
-  padding-right: 1rem;
-}
-#main-title{
 
-  max-width:18.5rem;
-  border-width: thin;
-  border-style: groove;
-  border-color: black;
-  text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight:300;
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
-  -webkit-animation: fadein 3s;
-     -moz-animation: fadein 3s ;
-      -ms-animation: fadein 3s ;
-       -o-animation: fadein 3s ;
-          animation: fadein 3s ;
-}
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+#main-title h1 {
+    font-size: 4rem;
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+#main-title h3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+#main-title {
+    max-width: 18.5rem;
+    border-width: thin;
+    border-style: groove;
+    border-color: black;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
 }
 
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 .navbar-brand {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
