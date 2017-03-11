@@ -33,21 +33,44 @@ html, body {
         background-attachment: scroll;
     }
 }
+
+#page2{
+  height: 100%;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url("../imgs/bg2.jpg");
+  background-attachment: fixed;
+
+}
+@media (max-width: 575px){
+    #page2{
+        background-attachment: scroll;
+    }
+}
 #main-title h1{
   font-size: 4rem;
 }
+#main-title h3{
+  padding-left: 1rem ;
+  padding-right: 1rem;
+}
 #main-title{
+
+  max-width:18.5rem;
+  border-width: thin;
+  border-style: groove;
   border-color: black;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight:300;
   font-size: 1.2rem;
   letter-spacing: .1rem;
-  -webkit-animation: fadein 4s;
-     -moz-animation: fadein 4s ;
-      -ms-animation: fadein 4s ;
-       -o-animation: fadein 4s ;
-          animation: fadein 4s ;
+  -webkit-animation: fadein 3s;
+     -moz-animation: fadein 3s ;
+      -ms-animation: fadein 3s ;
+       -o-animation: fadein 3s ;
+          animation: fadein 3s ;
 }
 @keyframes fadein {
     from { opacity: 0; }
