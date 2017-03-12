@@ -140,7 +140,7 @@ html, body {
 
 #benefits {
     min-height: 5rem;
-    height: 20%;
+    height: 30%;
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
@@ -190,8 +190,14 @@ html, body {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url("../imgs/bg4.jpg");
-    background-attachment: fixed;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);
 }
 
 @media (max-width: 575px) {
@@ -213,6 +219,7 @@ html, body {
     max-width: 18.5rem;
     border-width: thin;
     border-style: groove;
+    border-radius: 20px;
     border-color: black;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -221,27 +228,36 @@ html, body {
     letter-spacing: .1rem;
 }
 
-#try_circle {
+#pulse-button {
     margin: 0 auto;
-    width: 30rem;
-    height: 30rem;
+    display: block;
+    width: 500px;
+    height: 500px;
+    line-height: 100px;
+    /*text-shadow: 1px 1px 0.2px black;*/
+    border: none;
     border-radius: 50%;
-    border: 2px solid white;
-    font-size: 50px;
-    color: #fff;
-    line-height: 30rem;
+    background-image: url(../imgs/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#pulse-button h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
     text-align: center;
-    background-color: transparent;
+    color: black;
+    border-width: thin;
+    border-style: groove;
+    border-left: -20px;
+    border-color: black;
 }
-#try_circle a{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  letter-spacing: .12rem;
-  margin-left: 1rem;
-  color: white;
-  text-shadow: 1px 1px 1px black;
-}
+
+
 
 .navbar-brand {
     font-family: 'Open Sans Condensed', sans-serif;
@@ -254,4 +270,8 @@ html, body {
 .navbar-offset {
     margin-top: -5rem;
     padding-top: 5rem;
+}
+.nav-item:hover,.navbar-brand:hover{
+  -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
 }
