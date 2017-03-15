@@ -48,13 +48,9 @@ html, body {
 #why {
     min-height: 5rem;
     height: 20%;
-    background: #c2e59c;
+    background: rgb(56, 56, 56);
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c2e59c, #64b3f4);
 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
 }
 
@@ -68,12 +64,19 @@ html, body {
 }
 
 #why h3 {
+
     display: inline-flex;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     color: white;
     /*text-shadow: 0.3px 0.3px 0.3px black;*/
     /*font-size: 1.2rem;*/
+}
+#why_text{
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight : 100;
+  color:white;
 }
 
 #page2 {
