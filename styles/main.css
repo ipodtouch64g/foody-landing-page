@@ -50,7 +50,6 @@ html, body {
     height: 20%;
     background: rgb(56, 56, 56);
     /* fallback for old browsers */
-
     text-align: center;
 }
 
@@ -64,7 +63,6 @@ html, body {
 }
 
 #why h3 {
-
     display: inline-flex;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
@@ -72,11 +70,12 @@ html, body {
     /*text-shadow: 0.3px 0.3px 0.3px black;*/
     /*font-size: 1.2rem;*/
 }
-#why_text{
-  font-size: 1.2rem;
-  font-family: 'Lato', sans-serif;
-  font-weight : 100;
-  color:white;
+
+#why_text {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: white;
 }
 
 #page2 {
@@ -96,14 +95,12 @@ html, body {
 
 #page3 {
     height: 100%;
-    background-size: cover;
-    -o-background-size: cover;
-    background: #c2e59c;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c2e59c, #64b3f4);
+
+    background: linear-gradient(to bottom, rgb(56,56,56), rgb(133, 133, 133));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 }
 
 @media (max-width: 575px) {
@@ -115,12 +112,7 @@ html, body {
 #features {
     min-height: 5rem;
     height: 20%;
-    background: #c2e59c;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c2e59c, #64b3f4);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(56, 56, 56);
     text-align: center;
 }
 
@@ -128,7 +120,7 @@ html, body {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    color: white;
+    color: ivory;
     /*text-shadow: 0.3px 0.3px 0.3px black;*/
     /*font-size: 1.2rem;*/
 }
@@ -137,7 +129,7 @@ html, body {
     display: inline-flex;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    color: white;
+    color: ivory;
     /*text-shadow: 0.3px 0.3px 0.3px black;*/
     /*font-size: 1.2rem;*/
 }
@@ -246,7 +238,6 @@ html, body {
     background-size: cover;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 #page5 h1 {
@@ -261,8 +252,6 @@ html, body {
     border-color: black;
 }
 
-
-
 .navbar-brand {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
@@ -275,7 +264,8 @@ html, body {
     margin-top: -5rem;
     padding-top: 5rem;
 }
-.nav-item:hover,.navbar-brand:hover{
-  -webkit-animation: fadeIn .5s;
+
+.nav-item:hover, .navbar-brand:hover {
+    -webkit-animation: fadeIn .5s;
     animation: fadeIn .5s;
 }
