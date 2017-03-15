@@ -72,10 +72,11 @@ html, body {
 }
 
 #why_text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    color: white;
+    font-weight: bold;
+    color: black;
+    text-align:center;
 }
 
 #page2 {
@@ -83,19 +84,20 @@ html, body {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url("../imgs/bg2.jpg");
+    background-image: url("../imgs/bg2-a55.jpg") ;
     background-attachment: fixed;
 }
 
 @media (max-width: 575px) {
     #page2 {
+        height: auto;
         background-attachment: fixed;
     }
 }
 
 #page3 {
-    height: 100%;
-
+    height:auto;
+    font-size: 1.5rem;
     background: linear-gradient(to bottom, rgb(56,56,56), rgb(133, 133, 133));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -164,9 +166,10 @@ html, body {
 }
 
 #page4 {
-    height: 100%;
+    height:auto;
     background-size: cover;
     -o-background-size: cover;
+    font-size: 1.5rem;
     background: #ffd89b;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
@@ -179,6 +182,9 @@ html, body {
     #page4 {
         background-attachment: fixed;
     }
+}
+#page4 .subtittle{
+  font-weight: bold;;
 }
 
 #page5 {
@@ -227,9 +233,10 @@ html, body {
 #pulse-button {
     margin: 0 auto;
     display: block;
-    width: 500px;
-    height: 500px;
-    line-height: 100px;
+    width: 40%;
+    height: 0;
+    padding-bottom: 40%;
+    line-height: 10rem;
     /*text-shadow: 1px 1px 0.2px black;*/
     border: none;
     border-radius: 50%;
