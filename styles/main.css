@@ -41,7 +41,7 @@ html, body {
 
 @media (max-width: 575px) {
     #page1 {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
@@ -53,6 +53,7 @@ html, body {
     background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #c2e59c, #64b3f4);
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
 }
@@ -86,7 +87,7 @@ html, body {
 
 @media (max-width: 575px) {
     #page2 {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
@@ -104,7 +105,7 @@ html, body {
 
 @media (max-width: 575px) {
     #page3 {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
@@ -181,7 +182,7 @@ html, body {
 
 @media (max-width: 575px) {
     #page4 {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
@@ -202,7 +203,7 @@ html, body {
 
 @media (max-width: 575px) {
     #page5 {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
@@ -245,7 +246,7 @@ html, body {
 
 }
 
-#pulse-button h1 {
+#page5 h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
