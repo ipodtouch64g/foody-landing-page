@@ -37,6 +37,7 @@ html, body {
     background-position: center;
     background-image: url("../imgs/bg1.jpg");
     background-attachment: fixed;
+
 }
 
 @media (max-width: 575px) {
@@ -71,26 +72,28 @@ html, body {
     /*font-size: 1.2rem;*/
 }
 
-#why_text {
-    font-size: 1.5rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: black;
-    text-align:center;
-}
+/*#why_text {
+
+
+}*/
 
 #page2 {
     height: 100%;
     background-size: cover;
-    -o-background-size: cover;
-    background-position:center;
-    background-image: url("../imgs/bg5.jpg") ;
+    background-position: center;
+    background-image: url("../imgs/bg5.jpg");
     background-attachment: fixed;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 0.3px 0.3px 0.3px black;
+    text-align:center;
 }
 
 @media (max-width: 575px) {
     #page2 {
-        height: auto;
+        height: 120%;
         background-attachment: fixed;
     }
 }
