@@ -241,9 +241,9 @@ html, body {
 #pulse-button {
     margin: 0 auto;
     display: block;
-    width: 40%;
+    width: 50%;
     height: 0;
-    padding-bottom: 40%;
+    padding-bottom: 50%;
     line-height: 10rem;
     /*text-shadow: 1px 1px 0.2px black;*/
     border: none;
